@@ -1,0 +1,134 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5dc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#navbar .developer-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.spacer {
+    height: 200px;
+    background-image: url('https://img.freepik.com/free-vector/flat-abstract-wireframe-background_23-2149007618.jpg?q=10&h=200');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2px 3fr;
+    align-items: start;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid blue;
+}
+
+section::after {
+    content: '';
+    grid-column: 2;
+    height: 100%;
+    width: 1px;
+    background-color: blue;
+}
+
+section h2 {
+    grid-column: 1;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+section .section-content {
+    display: flex;
+    grid-column: 3;
+}
+#work .section-content {
+    flex-direction: row;
+}
+
+.work-sample {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.work-sample.large {
+    flex-basis: 100%;
+}
+
+.work-sample.small {
+    flex-basis: calc(50% - 10px);
+}
+
+.section-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-content a {
+    color: blue;
+    text-decoration: none;
+}
+
+.section-content a:hover {
+    text-decoration: underline;
+}
+
+.work-sample img.project-img {
+    width: 100%;
+    height: auto;
+}
+
+.work-sample .label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .work-sample img, .large-img {
+        width: 100%;
+    }
+}
