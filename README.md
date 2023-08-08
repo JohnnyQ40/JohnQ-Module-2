@@ -17,7 +17,7 @@ This is a Portfolio that contains some information about myself along with some 
 No dependencies
 
 ## Usage
-By right clicking the index.html and opening in a new browser or viewing the online application you can access the portfolio. 
+By right clicking the index.html and opening in a new browser or viewing the online application found here (https://johnnyq40.github.io/Professional-Portfolio-module-2/) you can access the portfolio. 
 
 ## License
 None
